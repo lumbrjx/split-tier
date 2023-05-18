@@ -1,0 +1,14 @@
+@import "../node_modules/bootstrap/scss/_functions.scss";
+@import "../node_modules/bootstrap/scss/_variables.scss";
+
+
+$customColors : (
+     'very-dark-cyan': hsl(183, 100%, 15%),
+     'dark-grayish-cyan': hsl(186, 14%, 43%),
+     'grayish-cyan': hsl(184, 14%, 56%),
+     'light-grayish-cyan': hsl(185, 41%, 84%),
+     'very-light-grayish-cyan': hsl(189, 41%, 97%),
+     'white-custom': hsl(0, 0%, 100%)
+);
+$theme-colors : map-merge($customColors, $theme-colors );
+
