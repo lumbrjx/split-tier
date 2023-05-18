@@ -1,0 +1,22 @@
+{
+  "name": "split-tier",
+  "version": "1.0.0",
+  "description": "simple tip calcumator \u001b[D\u001b[D\u001b[D\u001b[D\u001b[l\u001b[C\u001b[C\u001b[C\u001b[C using bootstrap",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CLOG9/split-tier.git"
+  },
+  "author": "CLOG9",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/CLOG9/split-tier/issues"
+  },
+  "homepage": "https://github.com/CLOG9/split-tier#readme",
+  "dependencies": {
+    "bootstrap": "^5.3.0-alpha3"
+  }
+}
