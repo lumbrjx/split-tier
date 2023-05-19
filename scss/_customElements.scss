@@ -16,7 +16,9 @@
 
 }
 #inpts1 ,#inpts2,#inpts3{
+    font-size: 19px;
     height: 35px;
+    max-width: 443px;
     background-size: 8px;
     background-repeat: no-repeat;
     background-position: center left;
@@ -26,7 +28,9 @@
     color: $very-dark-cyan;   
 }
 #inpts1::placeholder ,#inpts2::placeholder,#inpts3::placeholder{
+    font-size: 16px;
     color: $grayish-cyan;
+    
 }
 #inpts3{
     width: calc(6rem + 30px);
@@ -34,7 +38,38 @@
 }
 #parentContainer{
     border-radius: 20px;
+    max-width: 827px;
+    margin-inline: auto;
+    
+
 }
-#childContainer{
+#childContainer1{
+    max-width: 405px;
+
+}
+#childContainer2{
+    
     border-radius: 10px;
+    max-width: 350px;
+
+}
+#perPers1,#perPers2{
+    font-size: 12px;
+}
+#totalRes,#tipRes{
+    font-size: 26px;
+}
+#resetBtn{
+    border-radius: 5px;
+    letter-spacing: 2px;
+    
+}
+#spanPer5,#spanPer10,#spanPer15,#spanPer25,#spanPer50{
+    border-radius: 5px;
+}
+@media (min-width:827px){
+   
+    #childContainer2{
+        justify-content: space-between;
+    }
 }
