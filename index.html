@@ -13,59 +13,59 @@
   
 </head>
 <body class="bg-light-grayish-cyan">
-  <p class="text-dark-grayish-cyan" id="titleCustom" >SPLI<br>TTER</p>
-  <div class="bg-white-custom" id="parentContainer">
-    <div >
+  <p class="text-dark-grayish-cyan text-center pt-3" id="titleCustom" >SPLI<br>TTER</p>
+  <div class="bg-white-custom p-4 d-flex flex-wrap gap-4 justify-content-center" id="parentContainer">
+    <div class="d-flex flex-column gap-4 py-3" id="childContainer1">
       <!-- entery -->
-      <div>
-        <p class="text-dark-grayish-cyan">Bill</p>
+      <div >
+        <p class="text-dark-grayish-cyan mb-2">Bill</p>
         
           
           
-        <input type="text" title="bill" class="border-0 bg-very-light-grayish-cyan pe-3 " id="inpts1"  placeholder="0">
+        <input type="text" title="bill" class="border-0 bg-very-light-grayish-cyan pe-3 w-100" id="inpts1"  placeholder="0">
         
         
         
       </div>
-      <div>
-        <p class="text-dark-grayish-cyan" >Select Tip %</p>
-        <div class="d-flex flex-wrap gap-2">
-          <span class="bg-very-dark-cyan text-white-custom py-1 px-5 ">05%</span>
-          <span class="bg-very-dark-cyan text-white-custom py-1 px-5 ">10%</span>
-          <span class="bg-very-dark-cyan text-white-custom py-1 px-5 ">15%</span>
-          <span class="bg-very-dark-cyan text-white-custom py-1 px-5 ">25%</span>
-          <span class="bg-very-dark-cyan text-white-custom py-1 px-5 ">50%</span>
+      <div class="">
+        <p class="text-dark-grayish-cyan mb-2" >Select Tip %</p>
+        <div class="d-flex flex-wrap gap-2 justify-content-center">
+          <span class="bg-very-dark-cyan text-white-custom py-2 px-5 " id="spanPer5">05%</span>
+          <span class="bg-very-dark-cyan text-white-custom py-2 px-5 " id="spanPer10">10%</span>
+          <span class="bg-very-dark-cyan text-white-custom py-2 px-5 " id="spanPer15">15%</span>
+          <span class="bg-very-dark-cyan text-white-custom py-2 px-5 " id="spanPer25">25%</span>
+          <span class="bg-very-dark-cyan text-white-custom py-2 px-5 " id="spanPer50">50%</span>
           <input type="text" title="custom" class="border-0 bg-very-light-grayish-cyan pe-3 py-1" id="inpts3" placeholder="custom">
         </div>
       </div>
       <div>
-        <p class="text-dark-grayish-cyan">number of people</p>
+        <p class="text-dark-grayish-cyan mb-2">number of people</p>
 
-        <input type="text" title="ppl" class="border-0 bg-very-light-grayish-cyan pe-3" id="inpts2"  placeholder="0">
+        <input type="text" title="ppl" class="border-0 bg-very-light-grayish-cyan pe-3 w-100" id="inpts2"  placeholder="0">
       </div>
     </div>
-    <div class="bg-very-dark-cyan" id="childContainer">
+    <div class="bg-very-dark-cyan p-4 pt-5 d-flex flex-column gap-3 w-100" id="childContainer2">
       <!-- results -->
-      <div  >
-        <div>
+      <div class="d-flex flex-column gap-3"  >
+        <div class="d-flex justify-content-between">
           <div>
-            <p class="text-white-custom" >Tip Amount <br> <span class="text-dark-grayish-cyan">/per person</span> </p>
+            <p class="text-white-custom mb-2" >Tip Amount <br> <span class="text-dark-grayish-cyan" id="perPers2">/per person</span> </p>
           </div>
           <div>
-            <p class="text-grayish-cyan">$0.00</p>
+            <p class="text-grayish-cyan" id="tipRes">$0.00</p>
           </div>
         </div>
-        <div>
+        <div class="d-flex justify-content-between" >
           <div>
-            <p class="text-white-custom" >Total<br> <span class="text-dark-grayish-cyan" >/per person</span> </p>
+            <p class="text-white-custom mb-2" >Total<br> <span class="text-dark-grayish-cyan " id="perPers1" >/per person</span> </p>
           </div>
           <div>
-            <p class="text-grayish-cyan">$0.00</p>
+            <p class="text-grayish-cyan" id="totalRes">$0.00</p>
           </div>
         </div>
       </div>
       <div>
-        <button title="Reset"class="border-0 bg-grayish-cyan text-very-dark-cyan ">Reset</button>
+        <button title="Reset"class="border-0 bg-grayish-cyan text-very-dark-cyan py-2 w-100 " id="resetBtn">RESET</button>
       </div>
     </div>
   </div>
