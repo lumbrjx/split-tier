@@ -25,16 +25,21 @@
     background-position-x: 15px;
     text-align: end;
     border-radius: 4px;
-    color: $very-dark-cyan;   
+    color: $very-dark-cyan; 
+    border: 1px solid transparent;  
 }
 #inpts1::placeholder ,#inpts2::placeholder,#inpts3::placeholder{
     font-size: 16px;
-    color: $grayish-cyan;
+    color: $dark-grayish-cyan;
     
 }
 #inpts3{
     width: calc(6rem + 30px);
 
+}
+#inpts1:focus ,#inpts2:focus,#inpts3:focus{
+    outline: 1px solid $grayish-cyan;
+    
 }
 #parentContainer{
     border-radius: 20px;
@@ -60,13 +65,22 @@
     font-size: 26px;
 }
 #resetBtn{
+    background-color: $grayish-cyan;
     border-radius: 5px;
     letter-spacing: 2px;
     
 }
+#resetBtn:disabled{
+    opacity: 20%;
+}
+#resetBtn:not(:disabled):hover{
+    background-color: $light-grayish-cyan;
+}
 #spanPer5,#spanPer10,#spanPer15,#spanPer25,#spanPer50{
+    cursor: pointer;
     border-radius: 5px;
 }
+
 @media (min-width:827px){
    
     #childContainer2{
