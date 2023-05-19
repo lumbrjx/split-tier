@@ -1,3 +1,4 @@
+@import "./customColors";
 *{
     padding: 0;
     margin:0 ;
@@ -5,4 +6,35 @@
 }
 #titleCustom{
     letter-spacing: 3px;
+}
+#inpts1{
+    background-image: url("../images/icon-dollar.svg");
+
+}
+#inpts2{
+    background-image: url("../images/icon-person.svg");
+
+}
+#inpts1 ,#inpts2,#inpts3{
+    height: 35px;
+    background-size: 8px;
+    background-repeat: no-repeat;
+    background-position: center left;
+    background-position-x: 15px;
+    text-align: end;
+    border-radius: 4px;
+    color: $very-dark-cyan;   
+}
+#inpts1::placeholder ,#inpts2::placeholder,#inpts3::placeholder{
+    color: $grayish-cyan;
+}
+#inpts3{
+    width: calc(6rem + 30px);
+
+}
+#parentContainer{
+    border-radius: 20px;
+}
+#childContainer{
+    border-radius: 10px;
 }

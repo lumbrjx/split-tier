@@ -14,30 +14,37 @@
 </head>
 <body class="bg-light-grayish-cyan">
   <p class="text-dark-grayish-cyan" id="titleCustom" >SPLI<br>TTER</p>
-  <div class="bg-white-custom">
+  <div class="bg-white-custom" id="parentContainer">
     <div >
       <!-- entery -->
       <div>
         <p class="text-dark-grayish-cyan">Bill</p>
-        <input type="text" title="bill">
+        
+          
+          
+        <input type="text" title="bill" class="border-0 bg-very-light-grayish-cyan pe-3 " id="inpts1"  placeholder="0">
+        
+        
+        
       </div>
       <div>
         <p class="text-dark-grayish-cyan" >Select Tip %</p>
-        <div class="">
-          <span>5%</span>
-          <span>10%</span>
-          <span>15%</span>
-          <span>25%</span>
-          <span>50%</span>
-          <input type="text" title="custom" class="text-dark-grayish-cyan">
+        <div class="d-flex flex-wrap gap-2">
+          <span class="bg-very-dark-cyan text-white-custom py-1 px-5 ">05%</span>
+          <span class="bg-very-dark-cyan text-white-custom py-1 px-5 ">10%</span>
+          <span class="bg-very-dark-cyan text-white-custom py-1 px-5 ">15%</span>
+          <span class="bg-very-dark-cyan text-white-custom py-1 px-5 ">25%</span>
+          <span class="bg-very-dark-cyan text-white-custom py-1 px-5 ">50%</span>
+          <input type="text" title="custom" class="border-0 bg-very-light-grayish-cyan pe-3 py-1" id="inpts3" placeholder="custom">
         </div>
       </div>
       <div>
         <p class="text-dark-grayish-cyan">number of people</p>
-        <input type="text" title="ppl">
+
+        <input type="text" title="ppl" class="border-0 bg-very-light-grayish-cyan pe-3" id="inpts2"  placeholder="0">
       </div>
     </div>
-    <div class="bg-very-dark-cyan">
+    <div class="bg-very-dark-cyan" id="childContainer">
       <!-- results -->
       <div  >
         <div>
@@ -45,7 +52,7 @@
             <p class="text-white-custom" >Tip Amount <br> <span class="text-dark-grayish-cyan">/per person</span> </p>
           </div>
           <div>
-            <p>$0.00</p>
+            <p class="text-grayish-cyan">$0.00</p>
           </div>
         </div>
         <div>
@@ -53,12 +60,12 @@
             <p class="text-white-custom" >Total<br> <span class="text-dark-grayish-cyan" >/per person</span> </p>
           </div>
           <div>
-            <p>$0.00</p>
+            <p class="text-grayish-cyan">$0.00</p>
           </div>
         </div>
       </div>
       <div>
-        <button title="Reset" class="text-very-dark-grayish-cyan" >Reset</button>
+        <button title="Reset"class="border-0 bg-grayish-cyan text-very-dark-cyan ">Reset</button>
       </div>
     </div>
   </div>
