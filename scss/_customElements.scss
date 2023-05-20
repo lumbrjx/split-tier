@@ -9,11 +9,9 @@
 }
 #inpts1{
     background-image: url("../images/icon-dollar.svg");
-
 }
 #inpts2{
     background-image: url("../images/icon-person.svg");
-
 }
 #inpts1 ,#inpts2,#inpts3{
     font-size: 19px;
@@ -31,44 +29,36 @@
 #inpts1::placeholder ,#inpts2::placeholder,#inpts3::placeholder{
     font-size: 16px;
     color: $dark-grayish-cyan;
-    
 }
 #inpts3{
     width: calc(6rem + 30px);
-
 }
 #inpts1:focus ,#inpts2:focus,#inpts3:focus{
-    outline: 1px solid $grayish-cyan;
-    
+    outline: 1px solid $grayish-cyan;   
 }
 #parentContainer{
     border-radius: 20px;
     max-width: 827px;
     margin-inline: auto;
-    
-
 }
 #childContainer1{
-    max-width: 405px;
-
+    max-width: 405px;  
 }
-#childContainer2{
-    
+#childContainer2{ 
     border-radius: 10px;
     max-width: 350px;
-
 }
 #perPers1,#perPers2{
     font-size: 12px;
 }
 #totalRes,#tipRes{
     font-size: 26px;
+    word-break: break-all;
 }
 #resetBtn{
     background-color: $grayish-cyan;
     border-radius: 5px;
-    letter-spacing: 2px;
-    
+    letter-spacing: 2px; 
 }
 #resetBtn:disabled{
     opacity: 20%;
@@ -76,14 +66,19 @@
 #resetBtn:not(:disabled):hover{
     background-color: $light-grayish-cyan;
 }
-#spanPer5,#spanPer10,#spanPer15,#spanPer25,#spanPer50{
+#spanPer{
+    background-color: $very-dark-cyan;
     cursor: pointer;
     border-radius: 5px;
 }
-
 @media (min-width:827px){
-   
     #childContainer2{
         justify-content: space-between;
     }
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }

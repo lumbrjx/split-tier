@@ -7,10 +7,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="./css/index.min.css">
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" ></script>
-  <title>Frontend Mentor | Tip calculator app</title>
-
-  
-  
+  <title>Frontend Mentor | Tip calculator app</title> 
 </head>
 <body class="bg-light-grayish-cyan">
   <p class="text-dark-grayish-cyan text-center pt-3" id="titleCustom" >SPLI<br>TTER</p>
@@ -18,30 +15,23 @@
     <div class="d-flex flex-column gap-4 py-3" id="childContainer1">
       <!-- entery -->
       <div >
-        <p class="text-dark-grayish-cyan mb-2">Bill</p>
-        
-          
-          
-        <input type="text" title="bill" class="bg-very-light-grayish-cyan pe-3 w-100" id="inpts1"  placeholder="0">
-        
-        
-        
+        <p class="text-dark-grayish-cyan mb-2 d-flex justify-content-between">Bill <span id="errMsg1" ></span></p> 
+        <input type="number" title="bill" class="bg-very-light-grayish-cyan pe-3 w-100" id="inpts1"  placeholder="0"> 
       </div>
       <div class="">
         <p class="text-dark-grayish-cyan mb-2" >Select Tip %</p>
         <div class="d-flex flex-wrap gap-2 justify-content-center">
-          <span class="bg-very-dark-cyan text-white-custom py-2 px-5 " id="spanPer5">05%</span>
-          <span class="bg-very-dark-cyan text-white-custom py-2 px-5 " id="spanPer10">10%</span>
-          <span class="bg-very-dark-cyan text-white-custom py-2 px-5 " id="spanPer15">15%</span>
-          <span class="bg-very-dark-cyan text-white-custom py-2 px-5 " id="spanPer25">25%</span>
-          <span class="bg-very-dark-cyan text-white-custom py-2 px-5 " id="spanPer50">50%</span>
-          <input type="text" title="custom" class="border-0 bg-very-light-grayish-cyan pe-3 py-1" id="inpts3" placeholder="custom">
+          <span class=" text-white-custom py-2 px-5 " id="spanPer">05%</span>
+          <span class=" text-white-custom py-2 px-5 " id="spanPer">10%</span>
+          <span class=" text-white-custom py-2 px-5 " id="spanPer">15%</span>
+          <span class=" text-white-custom py-2 px-5 " id="spanPer">25%</span>
+          <span class=" text-white-custom py-2 px-5 " id="spanPer">50%</span>
+          <input type="number" title="custom" class=" bg-very-light-grayish-cyan pe-3 py-1 "  id="inpts3" placeholder="0">
         </div>
       </div>
       <div>
-        <p class="text-dark-grayish-cyan mb-2">number of people</p>
-
-        <input type="text" title="ppl" class=" bg-very-light-grayish-cyan pe-3 w-100" id="inpts2"  placeholder="0">
+        <p class="text-dark-grayish-cyan mb-2 d-flex justify-content-between" id="numOppTxt" >number of people <span id="errMsg2" ></span></p>
+        <input type="number" title="ppl" class=" bg-very-light-grayish-cyan pe-3 w-100" id="inpts2"  placeholder="0">
       </div>
     </div>
     <div class="bg-very-dark-cyan p-4 pt-5 d-flex flex-column gap-3 w-100" id="childContainer2">
@@ -49,10 +39,10 @@
       <div class="d-flex flex-column gap-3"  >
         <div class="d-flex justify-content-between">
           <div>
-            <p class="text-white-custom mb-2" >Tip Amount <br> <span class="text-dark-grayish-cyan" id="perPers2">/per person</span> </p>
+            <p class="text-white-custom mb-2 " >Tip Amount <br> <span class="text-dark-grayish-cyan" id="perPers2">/per person</span> </p>
           </div>
           <div>
-            <p class="text-grayish-cyan" id="tipRes">$0.00</p>
+            <p class="text-grayish-cyan  w-100    " id="tipRes">$0.00</p>
           </div>
         </div>
         <div class="d-flex justify-content-between" >
@@ -60,7 +50,7 @@
             <p class="text-white-custom mb-2" >Total<br> <span class="text-dark-grayish-cyan " id="perPers1" >/per person</span> </p>
           </div>
           <div>
-            <p class="text-grayish-cyan" id="totalRes">$0.00</p>
+            <p class="text-grayish-cyan w-100" id="totalRes">$0.00</p>
           </div>
         </div>
       </div>
